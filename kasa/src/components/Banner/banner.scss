@@ -1,0 +1,27 @@
+.banner {
+  height: 223px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+  }
+
+  &__title {
+    position: relative;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    z-index: 1;
+  }
+}

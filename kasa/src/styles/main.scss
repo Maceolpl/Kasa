@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./mixins";
+
+.cards {
+  background: #f6f6f6;
+  padding: 56px 50px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
