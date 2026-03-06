@@ -1,5 +1,5 @@
-import Banner from "../components/Banner/banner";
-import Card from "../components/Card/card";
+import Banner from "../components/Banner/banner.jsx";
+import Card from "../components/Card/card.jsx";
 import logements from "../data/logements.json";
 
 function Home() {
