@@ -1,9 +1,0 @@
-function Footer() {
-  return (
-    <footer style={{ padding: "20px", background: "#333", color: "white", marginTop: "50px" }}>
-      <p>© 2026 Kasa. Tous droits réservés.</p>
-    </footer>
-  );
-}
-
-export default Footer;
