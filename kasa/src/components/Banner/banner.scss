@@ -1,17 +1,14 @@
 .banner {
   height: 223px;
-  width: 1240px;
+  width: 100%;
   max-width: 1240px;
-  min-width: 50px;
   border-radius: 25px;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   &::before {
     content: "";
@@ -27,5 +24,12 @@
     font-size: 48px;
     font-weight: 700;
     z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    height: 111px;
+    border-radius: 10px;
+
+    &__title { font-size: 24px; }
   }
 }

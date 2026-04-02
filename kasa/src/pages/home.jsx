@@ -4,11 +4,8 @@ import logements from "../data/logements.json";
 
 function Home() {
   return (
-    <main>
-      <Banner
-        image="/images/banner-home.jpg"
-        text="Chez vous, partout et ailleurs"
-      />
+    <main className="home">
+      <Banner text="Chez vous, partout et ailleurs" />
 
       <section className="cards">
         {logements.map((logement) => (

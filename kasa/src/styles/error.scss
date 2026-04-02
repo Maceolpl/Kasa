@@ -3,45 +3,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 120px;
-  text-align: center;
-  color: #ff6060;
-}
+  height: 60vh;
 
-.error__title {
-  font-size: 288px;
-  font-weight: 700;
-  margin: 0;
-}
+  &__code {
+    font-size: 288px;
+    color: #ff6060;
+    font-weight: 700;
+    line-height: 1;
 
-.error__text {
-  font-size: 36px;
-  margin: 40px 0;
-}
-
-.error__link {
-  font-size: 18px;
-  color: black;
-  text-decoration: underline;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-  .error {
-    margin-top: 80px;
+    @media (max-width: 768px) { font-size: 96px; }
   }
 
-  .error__title {
-    font-size: 96px;
+  &__message {
+    font-size: 36px;
+    color: #ff6060;
+    text-align: center;
+    margin: 30px 20px;
+
+    @media (max-width: 768px) { font-size: 18px; }
   }
 
-  .error__text {
+  &__link {
+    color: #ff6060;
     font-size: 18px;
-    width: 260px;
-  }
+    text-decoration: underline;
 
-  .error__link {
-    font-size: 14px;
+    @media (max-width: 768px) { font-size: 14px; }
   }
 }

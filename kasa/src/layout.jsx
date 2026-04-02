@@ -5,13 +5,16 @@ import Footer from "./components/Footer/footer.jsx";
 
 function Layout() {
   return (
-    <>
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "100vh",
+      justifyContent: "space-between"
+    }}>
       <Header />
-      <main>
-        <Outlet /> {/* Ici seront affichées les pages */}
-      </main>
+      <Outlet />
       <Footer />
-    </>
+    </div>
   );
 }
 

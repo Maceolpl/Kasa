@@ -1,11 +1,17 @@
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/LOGO.png";
 import "./header.scss";
 
 function Header() {
   return (
     <header style={{ background: "white", color: "black" }}>
-      <img src={logo} alt="Logo Kasa" className="header__logo" />
-      <ul><li><a href="">Accueil</a></li><li><a href="">A Propos</a></li></ul>
+      <NavLink to="/">
+        <img src={logo} alt="Logo Kasa" className="header__logo" />
+      </NavLink>
+      <ul>
+        <li><NavLink to="/">Accueil</NavLink></li>
+        <li><NavLink to="/about">A Propos</NavLink></li>
+      </ul>
     </header>
   );
 }

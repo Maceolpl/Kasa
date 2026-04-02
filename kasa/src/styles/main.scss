@@ -3,17 +3,25 @@
 
 .cards {
   background: #f6f6f6;
-  padding: 100px 50px;
+  padding: 50px;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+  }
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  align-items: center;
+.home, .about, .logement {
+  padding: 0 100px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
