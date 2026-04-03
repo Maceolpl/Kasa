@@ -16,6 +16,13 @@
     cursor: pointer;
   }
 
+  &__inner {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  color: #333; // 👈 ajoute ici
+}
+
   &__arrow {
     transition: transform 0.3s ease;
 

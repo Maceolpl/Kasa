@@ -21,8 +21,25 @@
     font-size: 48px;
     cursor: pointer;
 
-    &--prev { left: 20px; }
-    &--next { right: 20px; }
+    &--prev {
+      left: 20px;
+    }
+
+    &--next {
+      right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px; // flèches plus petites
+
+      &--prev {
+        left: 10px;
+      }
+
+      &--next {
+        right: 10px;
+      }
+    }
   }
 
   &__counter {
@@ -32,5 +49,14 @@
     transform: translateX(-50%);
     color: white;
     font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 255px;
+    border-radius: 10px;
   }
 }
