@@ -29,6 +29,8 @@
   @media (max-width: 768px) {
     height: 111px;
     border-radius: 10px;
+    width: calc(100% - 40px);
+    margin: 0 20px;
 
     &__title { font-size: 24px; }
   }
