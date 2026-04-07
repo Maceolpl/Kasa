@@ -15,7 +15,7 @@ function Logement() {
 
   return (
     <main className="logement">
-      <Slideshow pictures={pictures} />
+      <Slideshow key={id} pictures={pictures} />
 
       <div className="logement__header">
         <div className="logement__info">
@@ -30,14 +30,29 @@ function Logement() {
 
         <div className="logement__host-rating">
           <div className="logement__host">
-            <span className="logement__host-name">{host.name}</span>
+            <span className="logement__host-name">
+              {host.name.split(" ")[0]}<br />{host.name.split(" ")[1]}
+            </span>
             <img src={host.picture} alt={host.name} className="logement__host-img" />
           </div>
           <div className="logement__rating">
             {[1, 2, 3, 4, 5].map((star) => (
-              <span key={star} className={`logement__star ${star <= Number(rating) ? "active" : ""}`}>
-                ★
-              </span>
+              <svg
+                key={star}
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"
+                  fill={star <= Number(rating) ? "#ff6060" : "#e3e3e3"}
+                  stroke={star <= Number(rating) ? "#ff6060" : "#e3e3e3"}
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             ))}
           </div>
         </div>
