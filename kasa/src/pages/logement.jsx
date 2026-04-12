@@ -20,7 +20,7 @@ function Logement() {
       <div className="logement__header">
         <div className="logement__info">
           <h1 className="logement__title">{title}</h1>
-          <p className="logement__location">{location}</p>
+          <p className="logement__location">{location.split(" - ").reverse().join(" - ")}</p>
           <ul className="logement__tags">
             {tags.map((tag) => (
               <li key={tag} className="logement__tag">{tag}</li>
@@ -59,8 +59,8 @@ function Logement() {
       </div>
 
       <div className="logement__collapses">
-        <Collapse title="Description">{description}</Collapse>
-        <Collapse title="Équipements">
+        <Collapse title="Description" bold>{description}</Collapse>
+        <Collapse title="Équipements" bold>
           <ul className="logement__equipments">
             {equipments.map((eq) => (
               <li key={eq}>{eq}</li>
